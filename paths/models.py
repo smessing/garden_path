@@ -18,6 +18,11 @@ title -- title of the garden path
   pub_date = models.DateTimeField('date published')
   title = models.CharField(max_length=300) 
 
+  # change to python 2.6 to use this:
+  #@property
+  #def auth_name(self):
+  #  return '%s %s' % (self.auth_fname, self.auth_lname)
+
   def _get_full_name(self):
     return '%s %s' % (self.auth_fname, self.auth_lname)
 
