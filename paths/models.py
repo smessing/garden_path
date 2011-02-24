@@ -26,7 +26,7 @@ title -- title of the garden path
   def _get_full_name(self):
     return '%s %s' % (self.auth_fname, self.auth_lname)
 
-  full_name = property(_get_full_name)
+  auth_name = property(_get_full_name)
 
   def __unicode__(self):
     return self.nick
