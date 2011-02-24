@@ -1,5 +1,8 @@
+# database ignores:
+*.db
+
 # python ignores:
 *.pyc
 
-# database ignores:
-*.db
+# vim ignores:
+*.swp
