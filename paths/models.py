@@ -45,16 +45,17 @@ position -- (automatically generated) position in path
   body = models.TextField()
   parent = models.ForeignKey(Path)
   __position = models.IntegerField()
-
+ 
+  def __init__(self, *args, **kwargs):
+    self.__position = kwargs.get('position', 0)
+ 
   def _get_pos(self):
     return self.__position
-
-  get_pos = property(_get_pos)
 
   def _set_pos(self, x):
     self.__position = x
 
-  set_pos = property(_set_pos)
+  position = property(_get_pos, _set_pos)
 
   def __unicode__(self);
     return unicode(self.position)
