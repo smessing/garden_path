@@ -4,13 +4,15 @@ class Path(models.Model):
 """A new garden path through wikipedia.
 
 Fields:
-auth_email -- author's e-mail
-auth_name -- author's name
-nick -- a short nickname for url purposes
-pub_date -- date published
-title -- title of the garden path
+approved -- boolean, only approved paths will be shown
+auth_email -- string, author's e-mail
+auth_name -- string author's name
+nick -- slug, a short nickname for url purposes
+pub_date -- datetime, date published
+title -- string, title of the garden path
 
 """
+  __approval = False
   auth_email = models.EmailField()
   auth_fname = models.CharField(max_length=200)
   auth_lname = models.CharField(max_length=200)
@@ -19,14 +21,22 @@ title -- title of the garden path
   title = models.CharField(max_length=300) 
 
   # change to python 2.6 to use this:
-  #@property
-  #def auth_name(self):
-  #  return '%s %s' % (self.auth_fname, self.auth_lname)
+  # @property
+  # def auth_name(self):
+  #   return '%s %s' % (self.auth_fname, self.auth_lname)
 
   def _get_full_name(self):
     return '%s %s' % (self.auth_fname, self.auth_lname)
 
   auth_name = property(_get_full_name)
+
+  def _get_approval(self):
+    return self.__approved
+
+  def _set_approval(self, status):
+    self.__approved = status
+
+  approval = property(_get_approval, _set_approval)
 
   def __unicode__(self):
     return self.nick
@@ -52,7 +62,7 @@ position -- (automatically generated) position in path
   __position = models.IntegerField()
  
   def __init__(self, *args, **kwargs):
-    self.__position = kwargs.get('position', 0)
+    self.position = kwargs.get('position', 0)
  
   def _get_pos(self):
     return self.__position
@@ -66,4 +76,4 @@ position -- (automatically generated) position in path
     return unicode(self.position)
 
   class Meta:
-    ordering = ['parent','-position']
+    ordering = ['parent','position']
