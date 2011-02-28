@@ -1,0 +1,8 @@
+
+
+
+
+# Need to remove models?
+
+python manage.py sqlclear <app>
+-- creates necessary DROP TABLE statements for this app, according to which tables already exist in your table (if any).
