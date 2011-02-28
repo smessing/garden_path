@@ -34,7 +34,7 @@ class Blob(models.Model):
   position = models.IntegerField()
  
   def __unicode__(self):
-    return unicode(self.position)
+    return unicode(self.path) + "; " + unicode(self.position)
 
   class Meta:
     ordering = ['path','position']
