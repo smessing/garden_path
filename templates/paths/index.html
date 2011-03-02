@@ -1,0 +1,9 @@
+{% if paths %}
+  <ul>
+  {% for p in paths %}
+    <li><a href="/garden_path/{{ p.nick }}/">{{ p.title }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No paths available.</p>
+{% endif %}
