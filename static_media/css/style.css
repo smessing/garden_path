@@ -6,3 +6,9 @@ body {
   padding:2em 0em;
   margin 0px;
 }
+
+#content {
+  margin-right:auto;
+  margin-left:auto;
+  width:600px;
+}
