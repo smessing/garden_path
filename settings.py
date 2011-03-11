@@ -78,6 +78,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'garden_path.urls'
 
+STATIC_DOC_ROOT = '/Users/sam/git/garden_path/static_media'
+
 TEMPLATE_DIRS = (
     # You will need to change this for your specific machine:
     # Always use forward slashes, even on Windows!
