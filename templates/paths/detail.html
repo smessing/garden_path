@@ -1,5 +1,8 @@
 {% if path %}
   {{ path.title }}
+  {% for b in blobs %}
+    <p><a href="{{ b.article }}">{{ b.body }}</a></p>
+  {% endfor %}
 {% else %}
   <p>Your path does not exist.</p>
 {% endif %} 
