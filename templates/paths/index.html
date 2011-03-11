@@ -1,3 +1,10 @@
+{% extends "users/base.html" %}
+
+{% block title %}
+Garden Path Index
+{% endblock %}
+
+{% block content %}
 {% if paths %}
   <ul>
   {% for p in paths %}
@@ -7,3 +14,4 @@
 {% else %}
   <p>No paths available.</p>
 {% endif %}
+{% endblock %}

@@ -4,7 +4,8 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    # Change for your admins:
+    ('Samuel Messing', 'samuel.messing@gmail.com'),
 )
 
 MANAGERS = ADMINS
