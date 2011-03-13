@@ -2,9 +2,23 @@ body {
   background=#FFFFFF;
   color:292C33;
   font-size:24px;
-  font-family:Arial;
+  font-family:Book Antiqua;
   padding:2em 0em;
   margin 0px;
+}
+
+ul {
+  list-style-type:none;
+}
+
+a {
+  color:#000000;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+a:hover {
+  color:#C0C0C0;
 }
 
 #content {
