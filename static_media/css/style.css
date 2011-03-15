@@ -145,7 +145,7 @@ img {
 .blogstyle .col3 {
   width:21%; /* width of right col content (width minus padding) */
   left:60%; /* please make note of the parens:
-  (100% - left col width) + (center col l + r padding) + (left col l + R padding) + (right col left padding) /*
+  (100% - left col width) + (center col l + r padding) + (left col l + R padding) + (right col left padding) */
 }
 /* Footer styles */
 #footer {
