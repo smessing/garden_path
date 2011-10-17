@@ -1,5 +1,12 @@
 Garden Paths
 ============
 
-A garden path is an essay composed by curating text from several different wikipedia articles. Think of it as a DFS traverse through a conceptual graph.  
+A garden path is an essay composed by curating text from several different
+wikipedia articles. Think of it as a DFS traverse through a conceptual graph.  
+
+Technologies 
+------------ 
+
+[.django](http://www.djangoproject.com/)---Django, "The Web framework for
+perfectionists with deadlines"
 
