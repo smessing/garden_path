@@ -78,7 +78,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'garden_path.urls'
 
-STATIC_DOC_ROOT = '/Users/saw/personal/2011/www/garden_path/static_media'
+STATIC_DOC_ROOT = '/Users/sam/personal/2011/www/garden_path/static_media'
 
 TEMPLATE_DIRS = (
     # You will need to change this for your specific machine:
