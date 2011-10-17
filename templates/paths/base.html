@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC"-//W3c/DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/static_media/css/style.css" type="text/css"/>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  <div class="colmask blogstyle">
+    <div class="colmid">
+      <div class="colleft">
+        <div class="col1">
+          <!-- Column 1 -->
+          <h2>Paths</h2>
+          {% block content %}{% endblock %}
+        </div>
+        <div class="col2">
+          <!-- Column 2 -->
+        </div>
+        <div class="col3">
+          <!-- Column 3 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
