@@ -7,6 +7,6 @@ wikipedia articles. Think of it as a DFS traverse through a conceptual graph.
 Technologies 
 ------------ 
 
-[Django](http://www.djangoproject.com/)---Django, "The Web framework for
+[Django](http://www.djangoproject.com/), "The Web framework for
 perfectionists with deadlines"
 
