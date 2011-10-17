@@ -1,0 +1,16 @@
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 800px;
+}
+
+header {
+  font-size: 32px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+}
