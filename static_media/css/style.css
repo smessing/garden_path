@@ -4,6 +4,7 @@ a {
 }
 
 body {
+  font-family: Helvetica;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -11,7 +12,8 @@ body {
 }
 
 header {
-  font-size: 32px;
+  font-size: 64px;
+  font-style: bold;
   text-align: center;
 }
 
