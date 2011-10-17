@@ -13,7 +13,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/Users/sam/git/garden_path/g_paths.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/Users/sam/personal/2011/www/garden_path/g_paths.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -78,12 +78,12 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'garden_path.urls'
 
-STATIC_DOC_ROOT = '/Users/sam/git/garden_path/static_media'
+STATIC_DOC_ROOT = '/Users/saw/personal/2011/www/garden_path/static_media'
 
 TEMPLATE_DIRS = (
     # You will need to change this for your specific machine:
     # Always use forward slashes, even on Windows!
-    "/Users/sam/git/garden_path/templates/",
+    "/Users/sam/personal/2011/www/garden_path/templates/",
 )
 
 INSTALLED_APPS = (
